@@ -1,0 +1,12 @@
+
+<div>
+    <h2>Employees List!</h2>
+
+    <div *ngFor="let employee of Employees">
+       <li>
+        <a [routerLink]='["empDetails"]' [state]="{ empDetail: employee }" >{{employee.name}}</a>
+       </li> 
+
+    </div>
+    
+</div>
