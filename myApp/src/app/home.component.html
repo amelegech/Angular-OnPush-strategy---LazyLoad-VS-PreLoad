@@ -1,8 +1,28 @@
-<Div>
-    <p>home works!</p>
-    <div *ngFor="let post of allPosts.slice(0,8)">{{post.title}}</div>
 
-</Div>
+  
 
+<div class="container">
+    <div >
+<p>Posts List!</p>
+<div class="myCard" >
+    <div class="myCard" *ngFor="let post of allPosts.slice(0,4)">
+        <img class="img" src="../assets/img/post.png" >
+       
+      <h5 >Post Title</h5>
+      <p  class="title" >{{post.title}}</p>
+      <a >Detail</a>
+   
 
+    </div>
+  </div>
+</div>
+</div>
 
+<P>Part  two</P>
+<div  class="myCard">
+    <div class="img">
+       
+            <img class="card-img-top" src="../assets/img/myFav.png" alt="Card image cap">
+           
+      </div>
+</div>

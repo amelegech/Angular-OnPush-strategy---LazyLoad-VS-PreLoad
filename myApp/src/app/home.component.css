@@ -1,4 +1,30 @@
 .container{
+   display: flex;
+    justify-content: center;
     width: auto;
-    padding: auto;
+    height: auto;
+    
+   
+}
+
+.myCard{
+    display: flex;
+    border: solid rgb(117, 122, 105) 15px;
+    padding: 10px;
+    
+  justify-content: center;   
+  
+   
+}
+.img{
+    width: 120px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
