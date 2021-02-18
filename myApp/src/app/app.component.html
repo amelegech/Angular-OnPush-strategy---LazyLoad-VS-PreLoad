@@ -1,12 +1,17 @@
 
-<div class="container">
+<div >
+  <div>
+    <nav class="nav">
+      <diV class="home"><a class="nav-link active" href="#" [routerLink]='["home"]'>Home</a> </diV>
+      <diV class="Products"><a class="nav-link" href="#" [routerLink]='["products","prods"]'>products</a></diV>
+      <diV class="homemployeee"> <a class="nav-link" href="#" [routerLink]='["emps", "employees"]'>employee</a></diV>
+    
+    </nav>
+  </div>
+  <div class="container">
+    <router-outlet></router-outlet>
+    <h1>Route, Lazy Loading </h1>
   
-<nav>
-  <a [routerLink]='["home"]'>Home</a>
-  <a [routerLink]='["products","prods"]'>Products</a>
-  <a [routerLink]='["emps", "employees"]'>Employees</a>
-</nav>
-<h1>Route, Lazy Loading </h1>
-
-  <router-outlet></router-outlet>
+  </div>
+ 
 </div>

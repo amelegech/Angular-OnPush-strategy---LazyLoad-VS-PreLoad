@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: flex;
     width: 90%;
     height: auto;
@@ -9,4 +9,13 @@
      border: solid whitesmoke;
        
     
+ } */
+ .home{
+     flex: 1;
+ }
+ .Products{
+     flex: 1;
+ }
+ .employee{
+     flex: 1;
  }

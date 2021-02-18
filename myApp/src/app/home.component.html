@@ -1,7 +1,17 @@
 
-  
+  <div >Hello From Home
+  <div class="card" style="width: 20rem;" *ngFor="let post of allPosts.slice(0,4)">
+    <img class="card-img-top" src="../assets/img/post.png" alt="Card image cap">
+    
+      <div class="card-body">
+        <p class="card-text">{{post.title}}</p>
+    
+    
+    </div>
+  </div>
+</div>
 
-<div class="container">
+<!-- <div class="container">
     <div >
 <p>Posts List!</p>
 <div class="myCard" >
@@ -25,4 +35,4 @@
             <img class="card-img-top" src="../assets/img/myFav.png" alt="Card image cap">
            
       </div>
-</div>
+</div> -->

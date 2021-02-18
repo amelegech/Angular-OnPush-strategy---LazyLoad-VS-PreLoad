@@ -1,12 +1,14 @@
 
 <div>
     <h2>Employees List!</h2>
-
+ <input type="text"  placeholder="Search" (input)="valueHandler($event)"/>
+ <p>{{inputVal}}</p>
     <div *ngFor="let employee of Employees">
        <li>
         <a [routerLink]='["empDetails"]' [state]="{ empDetail: employee }" >{{employee.name}}</a>
        </li> 
 
     </div>
-    
+    <h5>Fltered value after Search</h5>
+    <div *ngFor="let elem of filtereVal" >{{elem.name}}</div>
 </div>

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import {RouterModule, Routes} from'@angular/router';
 import { ProdDetailsComponent } from './prod-details.component';
+import {HttpClientModule} from '@angular/common/http';
+import { MyService } from './my.service';
 
 
 const MyRoutes:Routes =[
@@ -13,8 +15,10 @@ const MyRoutes:Routes =[
   declarations: [ProductsComponent, ProdDetailsComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(MyRoutes)
+    RouterModule.forChild(MyRoutes),
+    HttpClientModule
   ],
-   exports:[ProductsComponent, ProdDetailsComponent]
+   exports:[ProductsComponent, ProdDetailsComponent],
+   providers:[MyService]
 })
 export class ProductModule { }
