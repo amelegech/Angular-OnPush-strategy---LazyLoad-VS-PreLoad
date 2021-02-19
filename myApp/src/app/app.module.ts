@@ -17,7 +17,9 @@ import { MymyService } from './mymy.service';
 {path:'products',
 loadChildren:()=>import('./product/product.module').then(p=>p.ProductModule)},
 {path:"emps",
-loadChildren: ()=>import('./employee/employee.module').then(e=>e.EmployeeModule)}
+loadChildren: ()=>import('./employee/employee.module').then(e=>e.EmployeeModule)},
+
+{path: "Todo", loadChildren: ()=>import('./todo/todo.module').then(t=>t.TodoModule)}
  ]
 @NgModule({
   declarations: [

@@ -1,0 +1,10 @@
+
+
+ #mytext {
+   background-color: rgb(241, 123, 44);
+    color: rgb(240, 230, 224);
+ }
+
+ #mytext:hover{
+    text-decoration: line-through;
+ }

@@ -1,0 +1,22 @@
+<div>
+  <p>My Todo List!</p>
+  <span
+    >ADD To Do
+    <input type="text"  placeholder="your todo ?"  (keyup)="mytodo($event)"
+  /></span>
+  <button type="button" class="btn btn-success" (click)="addTodo()">ADD TODO</button>
+  
+  <div class="card" style="width: 18rem" *ngFor="let todo of allTodos">
+    <img
+      class="card-img-top"
+      src="../../assets/img/todo1.jpg"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+        
+      <p id="mytext" class="card-text"> {{ todo.todos }}  </p>
+      
+    </div>
+    <button  type="button" class="btn btn-danger" (click)="deletHandler(todo.id)">DELETE</button>
+  </div>
+</div>
